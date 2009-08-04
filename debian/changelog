@@ -1,0 +1,27 @@
+chkconfig (11.0-79.1-2) unstable; urgency=low
+
+  * Removed service program, now contained in sysvinit-utils (closes: #538379)
+  * Updated standards version
+  * Updated lintian overrides
+
+ -- Peter Eisentraut <petere@debian.org>  Wed, 05 Aug 2009 01:07:50 +0300
+
+chkconfig (11.0-79.1-1) unstable; urgency=low
+
+  * New upstream release
+  * Updated standards version
+
+ -- Peter Eisentraut <petere@debian.org>  Fri, 20 Jun 2008 11:21:47 +0200
+
+chkconfig (10.3-90-2) unstable; urgency=low
+
+  * Added Conflicts against sysvconfig (closes: #478047)
+  * Call service with /bin/bash because it contains bashisms (closes: #478528)
+
+ -- Peter Eisentraut <petere@debian.org>  Sun, 04 May 2008 13:50:54 +0200
+
+chkconfig (10.3-90-1) unstable; urgency=low
+
+  * Initial release (closes: #475361)
+
+ -- Peter Eisentraut <petere@debian.org>  Tue, 15 Apr 2008 19:02:14 +0200

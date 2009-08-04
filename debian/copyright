@@ -1,0 +1,22 @@
+This Debian package was created by Peter Eisentraut <petere@debian.org> on
+April 10, 2008.
+
+
+The chkconfig script and the chkconfig.8 man page are contained in the RPM 
+package aaa_base in the openSUSE distribution, downloadable at 
+<http://ftp.gwdg.de/pub/opensuse/distribution/openSUSE-current/repo/src-oss/suse/src/aaa_base-10.3-90.src.rpm>. 
+The version number of this Debian package reflects the version number of that 
+RPM package.
+
+Upstream author: Michael Schroeder <mls@suse.de>
+
+Copyright:
+
+  Copyright (c) 2003-2006 SuSE Linux AG, Nuernberg, Germany.
+
+License:
+
+  GPL v2 or later
+
+On Debian systems, the complete text of the GNU GPL version 2 can be found in
+the file /usr/share/common-licenses/GPL-2.
