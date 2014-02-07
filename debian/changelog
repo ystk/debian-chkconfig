@@ -1,3 +1,18 @@
+chkconfig (11.4-54.60.1-1) unstable; urgency=low
+
+  * New upstream release
+    - Adds --root option (closes: #556464)
+  * Use source format 3.0 (native)
+  * Updated standards version
+  * Updated build system to dh and debhelper compat 9
+  * Fixed lintian hyphen-used-as-minus-sign warnings
+  * Updated watch file (but we currently don't use the latest version,
+    because that is using systemd)
+  * Added test suite
+  * Use DEP5 in debian/copyright
+
+ -- Peter Eisentraut <petere@debian.org>  Wed, 15 Feb 2012 11:38:43 +0200
+
 chkconfig (11.0-79.1-2) unstable; urgency=low
 
   * Removed service program, now contained in sysvinit-utils (closes: #538379)

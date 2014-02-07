@@ -2,8 +2,8 @@ Source: chkconfig
 Section: admin
 Priority: optional
 Maintainer: Peter Eisentraut <petere@debian.org>
-Build-Depends: cdbs (>= 0.4.52), debhelper (>= 6.0.7), quilt
-Standards-Version: 3.8.2
+Build-Depends: debhelper (>= 9), perl, quilt
+Standards-Version: 3.9.2
 
 Package: chkconfig
 Architecture: all

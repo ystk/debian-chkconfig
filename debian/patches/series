@@ -1,2 +1,3 @@
 deps-output.diff
 rcd-path.diff
+hyphen-used-as-minus-sign.patch

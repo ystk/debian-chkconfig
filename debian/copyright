@@ -1,22 +1,43 @@
-This Debian package was created by Peter Eisentraut <petere@debian.org> on
-April 10, 2008.
+Format: http://dep.debian.net/deps/dep5/
+Upstream-Contact: http://bugs.opensuse.org/
+Source: The chkconfig script and the chkconfig.8 man page are
+ contained in the RPM package aaa_base in the openSUSE distribution,
+ downloadable at
+ <http://download.opensuse.org/source/distribution/11.4/repo/oss/suse/src/aaa_base-11.4-54.60.1.src.rpm>.
+ The version number of this Debian package reflects the version number
+ of that RPM package.
+License: GPL-2+
 
+Files: chkconfig chkconfig.8
+Copyright: 2003-2006 SuSE Linux AG, Nuernberg, Germany.
+License: GPL-2+
 
-The chkconfig script and the chkconfig.8 man page are contained in the RPM 
-package aaa_base in the openSUSE distribution, downloadable at 
-<http://ftp.gwdg.de/pub/opensuse/distribution/openSUSE-current/repo/src-oss/suse/src/aaa_base-10.3-90.src.rpm>. 
-The version number of this Debian package reflects the version number of that 
-RPM package.
+Files: debian/* t/*.t t/fixtures.sh
+Copyright: 2008-2012 Peter Eisentraut
+License: GPL-2+
 
-Upstream author: Michael Schroeder <mls@suse.de>
-
-Copyright:
-
-  Copyright (c) 2003-2006 SuSE Linux AG, Nuernberg, Germany.
-
+Files: t/libtap.sh
+Copyright: 2009, 2010, 2011 Russ Allbery <rra@stanford.edu>
+           2006, 2007, 2008 The Board of Trustees of the Leland Stanford Junior University
 License:
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to
+ deal in the Software without restriction, including without limitation the
+ rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ sell copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ IN THE SOFTWARE.
 
-  GPL v2 or later
-
-On Debian systems, the complete text of the GNU GPL version 2 can be found in
-the file /usr/share/common-licenses/GPL-2.
+License: GPL-2+
+ On Debian systems, the complete text of the GNU GPL version 2 can be
+ found in the file /usr/share/common-licenses/GPL-2.

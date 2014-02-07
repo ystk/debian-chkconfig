@@ -1,0 +1,153 @@
+Description: Fix lintian hyphen-used-as-minus-sign warnings
+Author: Peter Eisentraut <petere@debian.org>
+
+--- a/chkconfig.8
++++ b/chkconfig.8
+@@ -11,37 +11,37 @@ chkconfig \- enable or disable system se
+ 
+ .SH SYNOPSIS
+ .B chkconfig
+-.B -t|--terse
++.B \-t|\-\-terse
+ .RI [ names ]
+ .br
+ .B chkconfig
+-.B -s|--set
++.B \-s|\-\-set
+ .RI [ name
+ .IR state ]
+ .br
+ .B chkconfig
+-.B -e|--edit
++.B \-e|\-\-edit
+ .RI [ names ]
+ .br
+ .B chkconfig
+-.B -c|--check
++.B \-c|\-\-check
+ .I name
+ .RI [ state ]
+ .br
+ .B chkconfig
+-.B -l|--list
+-.RB [ --deps ]
++.B \-l|\-\-list
++.RB [ \-\-deps ]
+ .RI [ names ]
+ .br
+ .B chkconfig
+-.B -A|--allservices
++.B \-A|\-\-allservices
+ .br
+ .B chkconfig
+-.B -a|--add
++.B \-a|\-\-add
+ .RI [ names ]
+ .br
+ .B chkconfig
+-.B -d|--del
++.B \-d|\-\-del
+ .RI [ names ]
+ 
+ .SH DESCRIPTION
+@@ -72,9 +72,9 @@ are used. Inetd/xinetd services are conf
+ and
+ .IR /etc/xinetd.d ,
+ respectively. You can use the 
+-.B -A
++.B \-A
+ or
+-.B --allservices
++.B \-\-allservices
+ parameter to get all services (even the boot.*-services) listed.
+ .PP
+ If chkconfig is called without arguments, all services are listed
+@@ -95,8 +95,8 @@ to configure a service managed by the in
+ .PP
+ Insserv can calculate dependencies for only one service at the same
+ time. To work around this limitation imposed by insserv, chkconfig
+-uses the '-f' option of insserv when it reads the list of services from
+-standard input. Note that --force switches off all dependency checks
++uses the '\-f' option of insserv when it reads the list of services from
++standard input. Note that \-\-force switches off all dependency checks
+ and could lead to depending services no longer working, use with care.
+ .PP
+ If no services are specified, chkconfig reads lines from standard
+@@ -105,10 +105,10 @@ exactly the output of the terse list mod
+ reconfigure a service specification saved by a former run.
+ 
+ If the option
+-.B -f
++.B \-f
+ or
+-.B --force
+-is also given, insserv is called with a '-f' option.
++.B \-\-force
++is also given, insserv is called with a '\-f' option.
+ .SH EDIT MODE
+ This mode is a combination of the terse list mode and set mode.
+ It writes the state of all specified services (or all known
+@@ -131,15 +131,15 @@ depending if the service will be started
+ .B on
+ will be printed in bright green if the output is written to a
+ terminal. If the
+-.B --deps
++.B \-\-deps
+ option is given, the names of the services that must be started
+ before this service is appended to each line. The inetd/xinetd
+ services are listed in extra sections. 
+ 
+ You can use the
+-.B -A
++.B \-A
+ or
+-.B --allservices
++.B \-\-allservices
+ parameter to get all services (even the boot.*-services) listed.
+ .SH ADD MODE
+ Calls insserv
+@@ -153,9 +153,9 @@ defaults to all known services excluding
+ that are not enabled in runlevels 1 to 6 and start with 
+ .RB ' boot. '.
+ Use the
+-.B --allservices
++.B \-\-allservices
+ or
+-.B -A
++.B \-A
+ option if you want to see such services as well.
+ .SH EXAMPLES
+ .IP
+@@ -167,7 +167,7 @@ chkconfig apache
+ .PP
+ list the runlevel configuration of the apache web server
+ .IP
+-chkconfig -t apache xntpd
++chkconfig \-t apache xntpd
+ .PP
+ list the runlevel configuration of the apache web server and
+ the network time protocol daemon.
+@@ -193,19 +193,19 @@ chkconfig finger xinetd
+ .PP
+ configure a xinetd service
+ .IP
+-chkconfig -A >~root/chkconfig.save
++chkconfig \-A >~root/chkconfig.save
+ .PP
+ backup the current configuration
+ .IP
+-chkconfig -s <~root/chkconfig.save
++chkconfig \-s <~root/chkconfig.save
+ .PP
+ restore the configuration
+ .IP
+-chkconfig -e apache xntpd
++chkconfig \-e apache xntpd
+ .PP
+ change the runlevel configuration interactively
+ .IP
+-chkconfig -e
++chkconfig \-e
+ .PP
+ change the runlevel configuration of all services interactively
+ 

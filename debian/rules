@@ -1,4 +1,11 @@
 #!/usr/bin/make -f
 
-include /usr/share/cdbs/1/rules/debhelper.mk
-include /usr/share/cdbs/1/rules/patchsys-quilt.mk
+%:
+	dh $@ --with quilt
+
+override_dh_auto_test:
+	prove
+
+override_dh_clean:
+	rm -rf $(CURDIR)/tmp/
+	dh_clean
