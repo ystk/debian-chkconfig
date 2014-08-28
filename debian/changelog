@@ -1,3 +1,13 @@
+chkconfig (11.4.54.60.1debian1) unstable; urgency=low
+
+  * Change version number format because dpkg 1.17.0 does not accept
+    native packages with (apparent) Debian revisions anymore (#730879)
+  * Added version mangling in watch file accordingly
+  * Updated standards version
+  * Updated copyright format URI
+
+ -- Peter Eisentraut <petere@debian.org>  Mon, 02 Dec 2013 22:23:47 -0500
+
 chkconfig (11.4-54.60.1-1) unstable; urgency=low
 
   * New upstream release

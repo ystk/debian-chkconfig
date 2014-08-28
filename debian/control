@@ -3,7 +3,7 @@ Section: admin
 Priority: optional
 Maintainer: Peter Eisentraut <petere@debian.org>
 Build-Depends: debhelper (>= 9), perl, quilt
-Standards-Version: 3.9.2
+Standards-Version: 3.9.5
 
 Package: chkconfig
 Architecture: all
@@ -11,7 +11,7 @@ Depends: ${misc:Depends}, ${perl:Depends}
 Recommends: insserv
 Description: system tool to enable or disable system services
  Chkconfig is a utility to update and query runlevel information for system
- services.  Chkconfig manipulates the numerous symbolic links in /etc/init.d/, 
+ services.  Chkconfig manipulates the numerous symbolic links in /etc/init.d/,
  to relieve system administrators of some of the drudgery of manually editing
  the symbolic links.
  .

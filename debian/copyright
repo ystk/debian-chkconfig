@@ -1,4 +1,4 @@
-Format: http://dep.debian.net/deps/dep5/
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Contact: http://bugs.opensuse.org/
 Source: The chkconfig script and the chkconfig.8 man page are
  contained in the RPM package aaa_base in the openSUSE distribution,
